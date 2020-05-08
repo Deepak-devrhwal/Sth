@@ -8,31 +8,31 @@ class Anime extends Component {
           <h1>Anime</h1>
           <div className='videos'>
             <div className='video1'>
-              EPISODE 758
+              EPISODE 929
               <iframe
                 width='500'
                 height='288'
-                src='http://embed.genfb.com/545099389013795'
+                src='https://ww22.watchop.io/view/one-piece-episode-929/'
                 scrolling='no'
                 allowFullScreen
               ></iframe>
             </div>
             <div className='video2'>
-              EPISODE 757
+              EPISODE 928
               <iframe
                 width='500'
                 height='288'
-                src='http://embed.genfb.com/695389437275769'
+                src='https://ww22.watchop.io/view/one-piece-episode-928/'
                 scrolling='no'
                 allowFullScreen
               ></iframe>
             </div>
             <div className='video3'>
-              EPISODE 756
+              EPISODE 927
               <iframe
                 width='500'
                 height='288'
-                src='http://embed.genfb.com/695264470621599'
+                src='https://ww22.watchop.io/view/one-piece-episode-927/'
                 scrolling='no'
                 allowFullScreen
               ></iframe>
