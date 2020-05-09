@@ -15,6 +15,7 @@ class Anime extends Component {
                 src='https://ww22.watchop.io/view/one-piece-episode-929/'
                 scrolling='no'
                 allowFullScreen
+                title='ep1'
               ></iframe>
             </div>
             <div className='video2'>
@@ -25,6 +26,7 @@ class Anime extends Component {
                 src='https://ww22.watchop.io/view/one-piece-episode-928/'
                 scrolling='no'
                 allowFullScreen
+                title='ep2'
               ></iframe>
             </div>
             <div className='video3'>
@@ -35,6 +37,7 @@ class Anime extends Component {
                 src='https://ww22.watchop.io/view/one-piece-episode-927/'
                 scrolling='no'
                 allowFullScreen
+                title='ep3'
               ></iframe>
             </div>
             <div className='chapterList'>

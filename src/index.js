@@ -1,38 +1,40 @@
 import React from "react";
 import { render } from "react-dom";
-import { Router, Route, IndexRoute, browserHistory } from "react-router";
-import App from "./components/App";
-import Anime from "./components/Anime";
-import Card from "./components/Card";
-// import {
-//   App,
-//   Home,
-//   Anime,
-//   Characters,
-//   Layout,
-//   Manga,
-//   DevilFruit,
-//   Games,
-//   Forums,
-//   Memory,
-// } from "./components/";
-import "./components/style.css";
+import { Router, Route, IndexRoute } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "./sth/App";
+import Anime from "./sth/Anime";
+import Card from "./sth/Card";
+// import App from './components/App';
+import Home from "./sth/Home";
+import DevilFruit from "./sth/DevilFruit";
+import Characters from "./sth/Characters";
+// import Anime from './components/Anime';
+import Layout from "./sth/Layout";
+import Header from "./sth/Header";
+import Footer from "./sth/Footer";
+// import Manga from "./sth/Manga";
+import Games from "./sth/Games";
+import Forums from "./sth/Forums";
+// import Memory from "./sth/Memory";
+import "./sth/style.css";
 import * as serviceWorker from "./serviceWorker";
 
 const root = (
-  <Router history={browserHistory}>
+  <BrowserRouter>
     <Route path='/' component={App} />
     <Route component={Layout}>
       <Route path='/Home' component={Home} />
       <Route path='/Anime' component={Anime} />
       <Route path='/Characters' component={Characters} />
-      <Route path='/Manga' component={Manga} />
+      {/* <Route path='/Manga' component={Manga} /> */}
       <Route path='/DevilFruit' component={DevilFruit} />
       <Route path='/Games' component={Games} />
       <Route path='/Forums' component={Forums} />
-      <Route path='/Memory' component={Memory} />
+      {/* <Route path='/Memory' component={Memory} /> */}
     </Route>
-  </Router>
+  </BrowserRouter>
+  // </Router>
 );
 
 render(root, document.getElementById("root"));

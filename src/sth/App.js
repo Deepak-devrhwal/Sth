@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 class App extends Component {
   setHalfVolume = (event) => {
     event.target.volume = 0.4;
@@ -15,8 +15,12 @@ class App extends Component {
           autoPlay
         />
         <Link className='title' to='/Home'>
-          <img className='oplogo' src='../images/onepiecelogo1.png' />
-          <img className='powerup' src='../images/luf.gif' />
+          <img
+            className='oplogo'
+            src='../images/onepiecelogo1.png'
+            alt='logo'
+          />
+          <img className='powerup' src='../images/luf.gif' alt='power' />
         </Link>
       </div>
     );
