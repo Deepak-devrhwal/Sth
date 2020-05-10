@@ -11,12 +11,12 @@ import DevilFruit from "./sth/DevilFruit";
 import Characters from "./sth/Characters";
 // import Anime from './components/Anime';
 import Layout from "./sth/Layout";
-import Header from "./sth/Header";
-import Footer from "./sth/Footer";
-// import Manga from "./sth/Manga";
+// import Header from "./sth/Header";
+// import Footer from "./sth/Footer";
+import Manga from "./sth/Manga";
 import Games from "./sth/Games";
 import Forums from "./sth/Forums";
-// import Memory from "./sth/Memory";
+import Memory from "./sth/Memory";
 import "./sth/style.css";
 import * as serviceWorker from "./serviceWorker";
 
@@ -27,11 +27,11 @@ const root = (
       <Route path='/Home' component={Home} />
       <Route path='/Anime' component={Anime} />
       <Route path='/Characters' component={Characters} />
-      {/* <Route path='/Manga' component={Manga} /> */}
+      <Route path='/Manga' component={Manga} />
       <Route path='/DevilFruit' component={DevilFruit} />
       <Route path='/Games' component={Games} />
       <Route path='/Forums' component={Forums} />
-      {/* <Route path='/Memory' component={Memory} /> */}
+      <Route path='/Memory' component={Memory} />
     </Route>
   </BrowserRouter>
   // </Router>

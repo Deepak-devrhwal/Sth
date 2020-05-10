@@ -5,7 +5,7 @@ import MarkdownIt from "markdown-it";
 
 import Footer from "./Footer";
 
-// import characterInfo from "./characterinfo.json";
+import characterInfo from "./characterinfo.json";
 
 class Layout extends Component {
   static propTypes = {
@@ -16,7 +16,7 @@ class Layout extends Component {
     super(props);
     this.state = {
       searchQuery: "",
-      // searchResults: characterInfo.items.slice(0, 3),
+      searchResults: characterInfo.items.slice(0, 3),
     };
   }
 
@@ -32,11 +32,11 @@ class Layout extends Component {
     this.props.history.push("/Characters");
   };
 
-  // performSearch(query) {
-  // return characterInfo.items.filter((item) => {
-  //     return item.title.toLowerCase().match(query.toLowerCase());
-  //   });
-  // }
+  performSearch(query) {
+    return characterInfo.items.filter((item) => {
+      return item.title.toLowerCase().match(query.toLowerCase());
+    });
+  }
 
   render() {
     return (
